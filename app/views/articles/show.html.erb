@@ -19,7 +19,7 @@
   </ul>
   <% end %>
   <hr>
-  <%= simple_format(@article.description).html_safe %>
+  <%= markdown(@article.description) %>
   <% if @article.categories.any? %>
     <p>Categories: <%= render @article.categories %></p>
   <% end %>
