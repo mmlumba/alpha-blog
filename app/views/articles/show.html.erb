@@ -19,7 +19,9 @@
   </ul>
   <% end %>
   <hr>
-  <%= markdown(@article.description) %>
+  <div class="full-article">
+    <%= markdown(@article.description) %>
+  </div>
   <% if @article.categories.any? %>
     <p>Categories: <%= render @article.categories %></p>
   <% end %>
